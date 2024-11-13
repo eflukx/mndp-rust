@@ -1,17 +1,14 @@
 [package]
 name = "mndp"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Christopher Bruton <chris@bruton.tech>"]
-edition = "2018"
+edition = "2021"
 publish = false
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-bytes = "1.0.1"
+bytes = "1.8.0"
 macaddr = "1.0.1"
 
 [dev-dependencies]
 hex = "0.4.3"
-strum = { version = "0.20", features = ["derive"] }
-
+strum = { version = "0.26", features = ["derive"] }

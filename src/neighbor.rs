@@ -16,6 +16,7 @@ pub enum Unpack {
 
 /// High-level representation of an MNDP neighbor.
 #[derive(Clone, Debug, Eq, PartialEq, Default)]
+#[non_exhaustive]
 pub struct Neighbor {
     /// Board type/hardware model; e.g. 'CRS226-24G-2S+'.
     pub board: Option<String>,
@@ -40,8 +41,6 @@ pub struct Neighbor {
     pub uptime: Option<Duration>,
     /// Software version; e.g. '6.47.9 (long-term)'.
     pub version: Option<String>,
-    // Private member to prevent assignment of entire structure.
-    _private: ()
 }
 
 impl Neighbor {
